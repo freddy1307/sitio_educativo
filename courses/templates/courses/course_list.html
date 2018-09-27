@@ -1,0 +1,10 @@
+{% extends "base_layout.html" %}
+
+{% block title %} Course {% endblock %}
+
+{% block body %}
+    {% for course in courses %}
+        <h1>{{ course.name }}</h1>
+        <p>{{ course.description }}</p>
+    {% endfor %}
+{% endblock %}
